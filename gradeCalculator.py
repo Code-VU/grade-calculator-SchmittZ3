@@ -3,8 +3,24 @@ def calculateGrade():
     print("Calculating Grade")
     # This first line is provided for you
 
-    hrs = float(input("Enter score:"))
-
+    try:
+        score = float(input("Enter Score:"))
+        x = score
+        if 0.0 < x > 1.0:
+            print("Bad score")
+        elif x >= 0.9:
+            print("A")
+        elif x >= 0.8:
+            print("B")
+        elif x >= 0.7:
+            print("C")
+        elif x >= 0.6:
+            print("D")
+        elif x < 0.6:
+            print("F")
+    except:
+        print("Bad score")
+    
     # end assignment
 
 ## if you want to test locally before you try to sync
